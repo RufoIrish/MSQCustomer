@@ -1,0 +1,83 @@
+ion-toolbar {
+    --background: rgba(21, 160, 224, 0.5);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.done {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.p1,
+.p2 {
+    margin-left: 5%;
+}
+
+.p2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    margin-left: 10%;
+}
+
+.btn {
+    margin-left: 70%;
+    background-color: blue;
+}
+
+.btn1 {
+    margin-left: 3%;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+}
+
+.rateBtn {
+    border: 1px solid black;
+    margin-top: 10%;
+    font-style: bold;
+    background-color: skyblue;
+    border-radius: 12%;
+    padding: 5px 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    height: 14vh;
+    border: 1px solid black;
+}
+
+ion-icon{
+    font-size: 35px;
+}

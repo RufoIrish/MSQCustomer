@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-menu-button (click) = "updateUserinApp()"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="background">
+    <ion-card>
+        <ion-card-content>
+            <ion-label class="user"><img [src]="user.picture" id='userimage' alt=""><br>
+                <h6 class="username">{{ user.name }}
+                <ion-icon (click)="editProfile()" name="pencil"></ion-icon></h6>
+            </ion-label>
+            <ion-label>
+                <h6 class='name'>
+                    ID Number: {{ user.id_number }}</h6>
+            </ion-label><br>
+            <ion-label>
+                <h6 class='name'>
+                    Email:  {{ user.email }}</h6>
+            </ion-label><br>
+            <ion-label>
+                <h6 class='name'>
+                    Phone Number: {{ user.code}}{{ user.phone }}</h6>
+            </ion-label><br>
+            <ion-label>
+                <h6 class='name'>
+                    Address: {{ user.address }}</h6>
+            </ion-label><br>
+            <ion-label>
+                <h6 class='name'>
+                    Birthday: {{ user.birth_date|date:'dd / MM / yyyy' }}</h6>
+            </ion-label>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
